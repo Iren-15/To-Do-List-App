@@ -1,0 +1,86 @@
+body {
+    background-image: url(photo1.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    background-position: center;
+}
+
+.header {
+    font-family: 'Roboto', sans-serif;
+    font-size: 50px;
+    color: #125C13;
+}
+
+#inputText {
+    font-family: 'Roboto', sans-serif;
+    padding: 7px;
+    font-size: 20px;
+    color: #000000;
+    border-radius: 5px;
+    width: 45%;
+}
+
+.btnAdd {
+    font-family: 'Roboto', sans-serif;
+    margin-left: 5px;
+    padding: 7px;
+    font-size: 20px;
+    color: #3E7C17;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.itemText {
+    font-family: 'Roboto', sans-serif;
+    color: #3E7C17;
+    width: 50%;
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 2px;
+    border-radius: 3px;
+}
+
+.itemBtn {
+    font-family: 'Roboto', sans-serif;
+    margin-left: 5px;
+    width: 30px;
+    height: 30px;
+    background-color: #E64848;
+    border-radius: 3px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+.toDoCompleted {
+    text-decoration: line-through;
+    color:#000000;
+    font-weight: lighter;
+    background-color: #E8E8E8;
+}
+
+@media all and (max-width: 800px) {
+    .itemText {
+    width: 60%;
+}
+
+    #inputText {
+    width: 60%;
+    }
+}   
+
+@media all and (max-width: 500px) {
+    .itemText {
+    width: 70%;
+    font-size: 20px;
+    }
+
+    #inputText {
+    width: 60%;
+}
+}
